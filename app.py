@@ -11,8 +11,8 @@ from eda_tool.visualization import (
 )
 
 # Set page config
-st.set_page_config(page_title="Tool for Basic Data Cleaning and EDA", layout="wide")
-st.title("📊 Clean Sight")
+st.set_page_config(page_title="Clean Sight", layout="wide")
+st.title("📊 Tool for Basic Data Cleaning and EDA")
 st.markdown("#### _By Sujith Vaishnav")
 st.markdown("---")
 
