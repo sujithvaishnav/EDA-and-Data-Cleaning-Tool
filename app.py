@@ -12,7 +12,7 @@ from eda_tool.visualization import (
 
 # Set page config
 st.set_page_config(page_title="Tool for Basic Data Cleaning and EDA", layout="wide")
-st.title("📊 DATA CLEANING & EDA MADE EASY")
+st.title("📊 Clean Sight")
 st.markdown("#### _By Sujith Vaishnav")
 st.markdown("---")
 
