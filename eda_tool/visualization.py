@@ -2,6 +2,18 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 
+def plot_pie_chart(df, column):
+    """
+    Generates a pie chart for a categorical column.
+    Returns a matplotlib figure.
+    """
+    fig, ax = plt.subplots(figsize=(6, 6))
+    counts = df[column].value_counts(dropna=False)
+    ax.pie(counts, labels=counts.index, autopct='%1.1f%%', startangle=90)
+    ax.set_title(f"Pie Chart of {column}")
+    ax.axis('equal')  # Equal aspect ratio ensures the pie is circular.
+    return fig
+
 # Helper function to get categorical and numerical columns
 def get_col_types(df):
     cat_cols = df.select_dtypes(include=['object', 'category']).columns.tolist()
